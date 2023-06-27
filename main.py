@@ -7,7 +7,7 @@ import os
 import wget
 from post import Lol
 class Bot:
-    def _init_(self):
+    def __init__(self):
         self.login("username", "password")
 
     def login(self, username, password):
@@ -73,7 +73,7 @@ class Bot:
 def main():
     my_bot = Bot()
 
-if _name_ == '_main_':
+if __nam__ == '__main__':
     main()
 
 
@@ -89,5 +89,5 @@ class Bot(Lol):
 def main():
     my_bot = Bot()
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     main()
