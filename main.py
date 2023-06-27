@@ -7,7 +7,7 @@ import os
 import wget
 
 class Bot:
-    def _init_(self):
+    def __init__(self):
         self.login("username", "password")
 
     def login(self, username, password):
@@ -64,7 +64,7 @@ class Bot:
         print('Number of scraped images: ', len(images))
         path = os.getcwd()
         path = os.path.join(path, keyword + "s")
-        path = "D:\instabot\pics"
+        path = "C:\instabot\pics"
 
         counter = 0
         for image in images[3:]:
@@ -91,5 +91,5 @@ def main():
     my_bot = Bot()
 
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     main()
